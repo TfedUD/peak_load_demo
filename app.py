@@ -10,6 +10,14 @@ st.set_page_config(layout="wide",
 
 
 st.markdown('''For this study a PNNL prototype building was selected to be subjected to a parametric study.  
+            The climate zone in question is 2A so there is a focus on the Cooling Energy.  
+            This study was performed with LadybugTools' advanced simulation components for simulating peak loads.  
+            These loads in question are reflected by Heating and Cooling Energy for the entire day.    
+            During the course of the study it was noted that the Cooling Enery differed through the study by 78.929 Kwh.  
+            The Max Cooling Energy seen in the study is 702.327 Kwh while the minimum being 623.298.  
+            The Heating Energy differed significantly less at 15.33 Kwh of Heating Energy.  
+            Heating Energy peaked at 720.968 while dropping off at 705.638.  
+            Here is the data, explore it for yourself!
                 ''')
 
 df = pd.read_csv('data.csv')
