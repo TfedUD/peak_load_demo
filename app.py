@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 st.set_page_config(layout="wide", 
-                   page_title='Sensitivity Study',
+                   page_title='Peak Loads Sensitivity Study',
                    page_icon='8100464.png')
 
 
