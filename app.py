@@ -18,6 +18,7 @@ df = df.rename(columns={'in:Shade_Count':'Shade Count',
                         'in:Angle':'Angle',
                         'out:Cooling Energy Kwh': 'Cooling Energy Kwh',
                         'out:Heating Energy Kwh': 'Heating Energy Kwh'})
+df['Is Shade Vertical'] = df['Is Shade Vertical'].astype(int)
 
 fig = px.parallel_coordinates(df, color='Cooling Energy Kwh', color_continuous_scale='Portland')
 st.plotly_chart(fig, use_container_width=True)
@@ -42,6 +43,7 @@ with col3:
 with col4:
     fig4 = px.scatter(df, x='Angle', y='Cooling Energy Kwh')
     st.plotly_chart(fig4, use_container_width=True)
+    
     
 col11,col12,col13,col14 = st.columns(4)
 
